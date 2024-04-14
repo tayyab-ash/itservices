@@ -1,0 +1,185 @@
+:root{
+    --textDark: rgb(57, 54, 78);
+    --textPurple: rgb(119, 122, 243);
+    --textPurpleLight: rgb(189, 190, 200);
+    --textSlateBlue: rgb(68, 88, 129);
+    --textLightGray: rgb(124, 124, 124);
+    --textLightGray2: rgb(105, 105, 105);
+    --textLightGray3: rgb(172, 172, 172);
+
+    --colorDark: rgb(57, 54, 78);
+    --colorPurple: rgb(119, 122, 243);
+    --colorPurpleLight: rgb(226, 228, 253);
+    --colorPurpleLight2: rgb(245, 246, 255);
+
+    --borderPurple: rgb(119, 122, 243);
+    --borderDark: rgb(57, 54, 78);
+    --borderColorLight: rgb(231, 231, 231);
+
+    --transparent: rgba(255, 255, 255, 0);
+}
+
+.contactUs{
+    position: fixed;
+    top: 0;
+    right: -470px;
+    bottom: 0;
+    z-index: 2222;
+    width: 470px;
+    background-color: white;
+    transition: 0.3s ease-out;
+}
+
+.displayShow{
+    right: 0;
+}
+
+.contactUsInner{
+    padding: 50px;
+    background-color: white;
+    height: 100vh;
+}
+
+.contactUsHeading span{
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--textDark);
+}
+
+.contactUsHeading i{
+    cursor: pointer;
+}
+
+.hr{
+    margin-top: 2rem;
+    color: var(--textLightGray);
+    /* color: red; */
+    margin-bottom: 2rem;
+}
+
+.contactUsInner p{
+    text-align: justify;
+    font-stretch: condensed;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--textLightGray2);
+    margin-bottom: 2rem;
+}
+
+
+.contactInfo{
+    border: 1px solid var(--borderColorLight);
+    padding: 4px 20px;
+    border-radius: 4px;
+    margin-right: 4px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.contactInfo a{
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--textPurple);
+    transition: .3s;
+}
+
+.contactInfo i{
+    margin-right: 10px;
+    font-size: 14px;
+    color: var(--textPurple);
+    transition: .3s;
+    
+}
+
+.contactInfo:hover{
+    background-color: var(--colorPurple);
+    border-color: var(--colorPurple);
+    color: white;
+}
+.contactInfo:hover a,
+.contactInfo:hover i
+{
+    color: white;
+}
+
+.contactForm{
+    margin-top: 2rem;
+}
+
+.contactForm input{
+    padding: 15px 20px;
+    margin-bottom: 0.8rem;
+    border-radius: 4px;
+    border: 1px solid var(--borderColorLight);
+    background-color: var(--colorPurpleLight2);
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--textDark);
+    outline: none;
+}
+.contactForm textarea{
+    padding: 15px 20px;
+    /* margin-bottom: 0.8rem; */
+    border-radius: 4px;
+    border: 1px solid var(--borderColorLight);
+    background-color: var(--colorPurpleLight2);
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--textDark);
+    outline: none;
+    resize: none;
+}
+.contactForm button{
+    padding: 15px 20px;
+    margin-top: 0.2rem;
+    border-radius: 4px;
+    border: 1px solid var(--borderPurple);
+    background-color: var(--colorPurple);
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    outline: none;
+    resize: none;
+    transition: .2s;
+}
+.contactForm button:hover{
+    background-color: var(--colorDark);
+    border-color: var(--borderDark);
+}
+
+.socialLinks{
+    display: flex;
+    width: 100%;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 30px;
+    margin-top: 2rem;
+    /* background-color: red; */
+}
+
+.socialLinks a{
+    text-decoration: none;
+}
+.socialLinks .link{
+    padding: 1px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--colorPurple);
+    border: 1px solid var(--borderColorLight);
+    transition: .2s;
+}
+.socialLinks .link:hover{
+    color: white;
+    border-color: var(--borderPurple);
+    background-color: var(--colorPurple);
+}

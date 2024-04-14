@@ -1,0 +1,54 @@
+
+:root{
+    --textDark: rgb(57, 54, 78);
+    --textPurple: rgb(119, 122, 243);
+    --textPurpleLight: rgb(189, 190, 200);
+    --textSlateBlue: rgb(68, 88, 129);
+    --textLightGray: rgb(124, 124, 124);
+    --textLightGray2: rgb(105, 105, 105);
+    --textLightGray3: rgb(172, 172, 172);
+
+    --colorDark: rgb(57, 54, 78);
+    --colorPurple: rgb(119, 122, 243);
+    --colorPurpleLight: rgb(226, 228, 253);
+    --borderColorLight: rgb(231, 231, 231);
+
+    --transparent: rgba(255, 255, 255, 0);
+}
+
+
+.lightText{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.lightText span{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.lightText1{
+    padding: 4px 16px;
+    border-radius: 50px;
+    color: white;
+    background-color: var(--colorPurple) ;
+    position: relative;
+    z-index: 2;
+}
+
+.aboutHeading h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--textDark);
+    /* text-align: center; */
+}
+
+.aboutDescription p{
+    margin-top: 1rem;
+    font-size: 16px;
+    color: var(--textLightGray);
+    font-weight: 600;
+}
+

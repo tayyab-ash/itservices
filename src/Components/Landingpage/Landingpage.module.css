@@ -1,0 +1,38 @@
+.main{
+    background-color: rgb(245, 246, 255);
+}
+
+.section1{
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+    background-color: rgb(245, 246, 255);
+}
+.section2{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+.section3{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: rgb(245, 246, 255);
+}
+.section4{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+.section5{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: rgb(245, 246, 255);
+}
+
+.section6{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+/* @media screen and (max-width: 992px) {
+    .section1{
+        padding-top: 0rem !important;
+        margin-top: -4rem !important;
+    }
+  } */

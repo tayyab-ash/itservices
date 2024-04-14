@@ -1,0 +1,35 @@
+.contactSection{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+
+.contactHeading h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--textDark);
+    text-align: center;
+}
+
+.contactDescription span{
+    margin-top: 1rem;
+    font-size: 16px;
+    color: var(--textLightGray);
+    font-weight: 600;
+}
+
+.contactButton{
+    margin-top: 2rem;
+}
+.contactButton button{
+
+    padding: 14px 30px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+
+

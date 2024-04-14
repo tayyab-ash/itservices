@@ -1,0 +1,104 @@
+:root{
+    --textDark: rgb(57, 54, 78);
+    --textPurple: rgb(119, 122, 243);
+    --textSlateBlue: rgb(68, 88, 129);
+
+    --colorDark: rgb(57, 54, 78);
+    --colorPurple: rgb(119, 122, 243);
+    --colorPurpleLight: rgb(226, 228, 253);
+
+    --transparent: rgba(255, 255, 255, 0);
+}
+
+/* .headingSection{
+    width: 90%;
+} */
+
+.heroContainer{
+    position: relative;
+    z-index: 1;
+}
+
+.lightText{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.lightText span{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.lightText1{
+    padding: 4px 16px;
+    border-radius: 50px;
+    color: white;
+    background-color: var(--colorPurple) ;
+    position: relative;
+    z-index: 2;
+}
+.lightText2{
+    position: relative;
+    z-index: 0;
+    padding: 4px 16px 4px 44px;
+    margin-left: -2rem;
+    border-radius: 50px;
+    color: var(--textPurple);
+    background-color: var(--colorPurpleLight) ;
+}
+/* @media screen and (max-width: 540px) {
+    .lightText2{
+        padding: 4px 16px;
+        margin-top: 4px;
+        margin-left: 0;
+    }
+} */
+
+/* @media screen and (min-width:540px) and ( max-width: 990px) {
+    .headingSection{
+        width: 100%;
+    }
+} */
+
+
+.heroHeading h1{
+    margin-top: 0.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--textDark);
+}
+
+
+
+.heroDescription{
+    margin-top: 1rem;
+    font-size: 16px;
+    color: var(--textSlateBlue);
+    font-weight: 600;
+}
+
+.heroButtons{
+    margin-top: 2rem;
+}
+
+.heroButtons button{
+    padding: 14px 30px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.exploreIcon{
+    font-size: 14px ;
+    margin-left: 4px;
+}
+
+@media screen and (min-width:990px) and ( max-width: 1200px) {
+    .lightText2{
+        padding: 4px 16px;
+        margin-top: 4px;
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,177 @@
+:root {
+  --textDark: rgb(57, 54, 78);
+  --textPurple: #777af3;
+
+  --colorDark: rgb(57, 54, 78);
+  --colorPurple: rgb(119, 122, 243);
+
+  --transparent: rgba(255, 255, 255, 0);
+}
+
+.navContainer {
+  width: 100%;
+  background-color: rgb(255, 255, 255) !important;
+  position: fixed;
+  z-index: 200;
+  transition: .2s;
+}
+.navBg{
+  box-shadow: 0px 0px 50px 20px rgba(69, 69, 69, 0.125);
+}
+.navBgNone{
+  box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0) !important;
+}
+
+
+
+.navHeading {
+  font-size: 28px;
+  font-weight: 700;
+}
+.navHeading .htext1{
+  color: var(--textDark);
+}
+.navHeading .htext2{
+  color: var(--textPurple);
+}
+
+.navitems li a {
+  color: var(--textDark);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  /* padding: 0px 20px; */
+  margin: 0px 20px;
+  position: relative;
+  transition: 0.2s;
+  margin-bottom: 1rem;
+}
+
+.navitems li a::after{
+  content: '';
+  transition: .2s;
+  position: absolute;
+  background-color: var(--colorPurple);
+  height: 3px;
+  left: 50%;
+  bottom: 0;
+  top: 24px;
+  width: 0;
+  transform: translateX(-50%);
+}
+
+.navitems li a:hover::after{
+  width: 100%;
+}
+
+.navitems li a:hover{
+  color: var(--textPurple); 
+}
+
+.navItemActive{
+  color: var(--textPurple) !important;
+}
+
+.navItemActive::after{
+  content: '';
+  transition: .2s;
+  position: absolute;
+  background-color: var(--colorPurple);
+  height: 3px;
+  left: 50%;
+  bottom: 0;
+  top: 24px;
+  width: 100% !important;
+  transform: translateX(-50%);
+}
+
+
+
+.navButtons button {
+  padding: 8px 30px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.txtSignup {
+  position: relative;
+  z-index: 1243;
+}
+
+.navButtons #loginBtn {
+  margin-right: 10px;
+}
+
+/* MobileNav */
+
+.menuIco {
+  display: none;
+  font-size: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+  margin-top: 6px;
+}
+.menuIco:hover {
+  transform: scaleX(1.5);
+}
+
+.mobileNav {
+  background-color: rgb(255, 255, 255);
+  z-index: 10;
+  padding-bottom: 20px;
+  padding-top: 100px;
+  position: fixed;
+  top: -300px;
+  width: 100%;
+  transition: 0.4s ease-in-out;
+}
+
+.mobileNavShow {
+  top: 0 !important;
+  background-color: rgb(255, 255, 255);
+  /* z-index: 999; */
+}
+.mobNavContainer {
+  background-color: rgb(255, 255, 255);
+}
+.mobileNav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+  padding: 0px 0px 20px 10px;
+}
+.mobileNav ul li {
+  padding: 6px 0px;
+}
+.mobileNav ul li a {
+  text-decoration: none;
+  color: var(--textDark);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 992px) {
+  .navitems {
+    display: none !important;
+  }
+  .navButtons {
+    display: none !important;
+  }
+  .mobNavButtons {
+    display: block !important;
+  }
+  .menuIco {
+    display: block !important;
+  }
+}

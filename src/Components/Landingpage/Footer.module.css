@@ -1,0 +1,109 @@
+:root{
+    --textDark: rgb(57, 54, 78);
+    --textPurple: rgb(119, 122, 243);
+    --textPurpleLight: rgb(189, 190, 200);
+    --textSlateBlue: rgb(68, 88, 129);
+    --textLightGray: rgb(124, 124, 124);
+    --textLightGray2: rgb(105, 105, 105);
+    --textLightGray3: rgb(172, 172, 172);
+
+    --colorDark: rgb(57, 54, 78);
+    --colorPurple: rgb(119, 122, 243);
+    --colorPurpleLight: rgb(226, 228, 253);
+    --borderColorLight: rgb(231, 231, 231);
+
+    --transparent: rgba(255, 255, 255, 0);
+}
+.footer{
+    padding-top: 6rem;
+    background-color: rgb(33, 34, 64);
+}
+
+.mainFooter{
+    margin-bottom: 6rem;
+}
+
+.mainFooter h3{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.mainText{
+    margin-bottom: 2rem;
+}
+.mainText span{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: var(--textPurpleLight);
+}
+
+.footerList{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+.footerList li{
+    margin-bottom: 1rem;
+}
+
+.footerList li a{
+    text-decoration: none;
+    margin-bottom: 1rem;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--textPurpleLight);
+    transition: 0.2s;
+    position: relative;
+}
+
+.footerList li a::after{
+    content: '';
+    transition: .2s;
+    position: absolute;
+    background-color: var(--colorPurple);
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    top: 24px;
+    width: 0;
+    transform: translateX(-50%);
+}
+.footerList li a:hover::after{
+    width: 100%;
+}
+
+
+.footerList li a:hover{
+    color: var(--textPurple); 
+}
+
+
+
+.line{
+    color: var(--textPurpleLight);
+}
+
+.copyrightText{
+    /* color: var(--textPurpleLight); */
+    margin-bottom: 1rem;
+}
+
+.copyrightText .cpText{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--textPurpleLight);
+    /* margin-bottom: 1rem; */
+}
+
+.copyrightText a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    transition: 0.2s;
+}
+.copyrightText a:hover{
+   color: var(--textPurple);
+}

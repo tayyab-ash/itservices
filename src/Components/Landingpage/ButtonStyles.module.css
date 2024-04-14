@@ -1,0 +1,76 @@
+/* .actionButtons button{
+    padding: 8px 30px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 16px;
+} */
+
+.actionButtons .btn1{
+    background-color: var(--transparent);
+    border: 1px solid var(--colorPurple);
+    color: var(--textPurple); 
+    position: relative;
+    transition: .2s;
+    z-index: 12;
+    transition: 0.2s;
+}
+.actionButtons .btn1:hover{
+    color: white;
+}
+
+.actionButtons .btn1::before{
+    content: '';
+    position: absolute;
+    background-color: var(--colorPurple);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: block;
+    transition: transform .2s linear 0s, -webkit-transform .25s cubic-bezier(.38,.32,.36,.98) 0s;
+    transform: scaleX(0);
+    transform-origin: right center;
+}
+
+.actionButtons .btn1:hover::before{
+    transform: scaleX(1);
+    transform-origin: left center;
+}
+
+.actionButtons .btn2{
+    background-color: var(--colorPurple);
+    /* border: none; */
+    margin-left: 0.5rem;
+    border: 1px solid var(--colorPurple);
+    color: white;
+    position: relative;
+    z-index: 12;
+    transition: 0.4s;
+}
+.actionButtons .btn2:hover{
+    border: 1px solid var(--colorDark);
+}
+
+
+
+.actionButtons .btn2::before{
+    content: '';
+    position: absolute;
+    background-color: var(--colorDark);
+    border-radius: 3px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: block;
+    transition: transform .2s linear 0s, -webkit-transform .25s cubic-bezier(.38,.32,.36,.98) 0s;
+    transform: scaleX(0);
+    transform-origin: right center;
+}
+
+.actionButtons .btn2:hover::before{
+    transform: scaleX(1);
+    transform-origin: left center;
+}

@@ -1,0 +1,193 @@
+:root{
+    --textDark: rgb(57, 54, 78);
+    --textPurple: rgb(119, 122, 243);
+    --textPurpleLight: rgb(189, 190, 200);
+    --textSlateBlue: rgb(68, 88, 129);
+    --textLightGray: rgb(124, 124, 124);
+    --textLightGray2: rgb(105, 105, 105);
+    --textLightGray3: rgb(172, 172, 172);
+
+    --colorDark: rgb(57, 54, 78);
+    --colorPurple: rgb(119, 122, 243);
+    --colorPurpleLight: rgb(226, 228, 253);
+    --colorPurpleLight2: rgb(245, 246, 255);
+    --borderColorLight: rgb(231, 231, 231);
+
+    --transparent: rgba(255, 255, 255, 0);
+}
+
+
+.aboutUs{
+    padding-top: 4rem !important;
+}
+
+.img{
+    overflow: hidden;
+}
+.imageSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageSection h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    color: white;
+}
+.imageSection p{
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+
+
+.section1{
+    padding-bottom: 6rem;
+    padding-top: 6rem;
+}
+
+.lightText span{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.lightText{
+    padding: 4px 16px;
+    display: inline;
+    border-radius: 50px;
+    color: var(--textPurple);
+    background-color: var(--colorPurpleLight) ;
+}
+
+.aboutHeading h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--textDark);
+}
+
+.aboutDescription p{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 16px;
+    color: var(--textLightGray);
+    font-weight: 600;
+}
+
+.sectionImg img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.servicesHeading h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--textDark);
+    text-align: center;
+}
+.servicesDescription{
+    padding: 0px 20%;
+}
+.servicesDescription span{
+    margin-top: 1rem;
+    font-size: 16px;
+    color: var(--textSlateBlue);
+    font-weight: 600;
+}
+
+
+.section2{
+    padding-bottom: 6rem;
+    padding-top: 6rem;
+    background-color: var(--colorPurpleLight2);
+}
+
+.profileCard{
+    padding: 10px 10px;
+    background-color: white;
+    border-radius: 10px;
+    width: calc(90%/3);
+    margin: 10px;
+}
+
+
+.profileCard img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.profileCard h3{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--textDark);
+    margin-top: 30px;
+    line-height: 14px;
+}
+
+.profileCard span{
+    font-weight: 500;
+    color: var(--textLightGray2);
+}
+.profileCard p{
+    padding: 0px 10%;
+    margin-top: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--textLightGray2);
+
+}
+
+
+.section3{
+    padding: 6rem 0;
+}
+
+.progressCard{
+    background-color: rgb(246, 247, 253);
+    width: calc(90%/4);
+    margin: 10px;
+    padding: 30px;
+    border-radius: 10px;
+}
+.progressCard h1{
+    font-size: 44px;
+    color: var(--textDark);
+    font-weight: 600;
+}
+.progressCard span{
+    font-size: 18px;
+    font-weight: 500;
+    /* color: var(--textSlateBlue); */
+    color: var(--textLightGray2);
+}
+
+.progBar{
+    width: 160px;
+    height: 160px;
+}
+
+.progBarIn{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: white;
+    border: 2px solid var(--borderColorLight);
+}
+.progBarIn span{
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--textDark);
+}
+
+@media screen and (max-width: 992px) {
+    .profileCard{
+        width: auto;
+    }
+    .progressCard{
+        width: auto;
+    }
+}
