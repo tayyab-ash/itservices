@@ -2,6 +2,24 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Available Libraries
+
+Must install these libraries before use...
+
+### `npm i react-router-dom`
+
+The react-router-dom package contains bindings for using React Router in web applications. Please see the Getting Started guide for more information on how to get started with React Router.
+
+### `npm i react-alice-carousel`
+
+React Alice Carousel is a React component for building content galleries, content rotators and any React carousels.
+
+### `npm i aos` 
+
+Small library to animate elements on your page as you scroll.
+AOS allows you to animate elements as you scroll down, and up. If you scroll back to top, elements will animate to it's previous state and are ready to animate again if you scroll down.
+
+
 ## Available Scripts
 
 In the project directory, you can run:
